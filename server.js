@@ -14,4 +14,4 @@ app.get('/about',middleware.requireAuthentification, function(req,res){
 app.use(express.static(__dirname + "/public"));
 
 //listen to port
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
